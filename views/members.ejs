@@ -1,0 +1,9 @@
+<%- include('template/header') %>
+    Hello, <%= username %>
+    <br />
+    <br />
+    <% for(let i = 0; i < img.length; i++) { %>
+        <%- include('template/photos', {img: img[i]}) %>
+    <% } %>
+    <button onclick="window.location='/logout'">Sign out</button>
+<%- include('template/footer') %>

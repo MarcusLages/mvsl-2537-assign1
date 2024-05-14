@@ -1,0 +1,8 @@
+<li>
+    <%= user.username %>: <%= user.user_type %> 
+    <form action='/changePermission' method='post'>
+        <button name="permission" value="user" style="background-color: aquamarine;">Demote to user</button>
+        <button name="permission" value="admin" style="background-color: red;">Promote to admin</button>
+        <input name="username" value=<%- user.username %> type="hidden"/>
+    </form>
+</li>

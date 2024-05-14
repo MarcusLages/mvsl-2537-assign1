@@ -1,5 +1,8 @@
 <%- include('template/header') %>
-    <%= error %>
-    <br />
-    <button onclick="window.location='<%= path %>'"><%= button %></button>
+    <div class="container-fluid container-sm">
+        <h1 style="font-size: large; color: red">Error!</h1>
+        <div><%= error %></div>
+        <br/>
+        <button type="button" class="btn btn-primary" onclick="window.location='<%= path %>'"><%= button %></button>
+    </div>
 <%- include('template/footer') %>

@@ -1,10 +1,12 @@
-<%- include("template/header") %> 
-	<div>Users:</div>
+<%- include("template/header") %>
+<div class="container-sm container-fluid">
+	<h1>Users:</h1>
     <ul>
         <% let i=0; %>
 		<% for(i=0; i < users.length; i++) { %>
             <%- include('template/user', {user: users[i]})  %> 
         <% } %> 
     </ul>
-    <button onclick="window.location='/home'">Go to home</button>
+    <button class="btn btn-dark" onclick="window.location='/home'">Go to home</button>
+</div>
 <%- include("template/footer") %> 

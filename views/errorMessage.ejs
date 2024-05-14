@@ -1,5 +1,7 @@
 <%- include("template/header") %>
+<div class="container-fluid container-sm">
     <h1 style="font-size: large; color: red">Error!</h1>
     <div><%= error %></div>
-    <button onclick="window.location='/home'">Go to home</button>
+    <button type="button" class="btn btn-primary" onclick="window.location='/home'">Go to home</button>
+</div>
 <%- include("template/footer") %>

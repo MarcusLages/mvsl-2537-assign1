@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../COMP2530-s23-A3-Sample-Code"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mvsl-2537-assigns"
+	}
+}

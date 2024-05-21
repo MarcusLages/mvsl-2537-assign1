@@ -41,6 +41,18 @@ const updatePagDiv = function () {
     <button class="btn btn-outline-danger page ml-1 numberedButtons" value="${numPages}">>></button>
     `);
   }
+
+  $('#pagination').append('<br/>');
+
+  if (currentPage != 1)
+    $("#pagination").append(`
+    <button class="btn btn-outline-danger page ml-1 numberedButtons" value="${currentPage - 1}">Previous</button>
+    `);
+  if (currentPage != numPages)
+    $("#pagination").append(`
+    <button class="btn btn-outline-danger page ml-1 numberedButtons" value="${currentPage + 1}">Next</button>
+    `);
+
 };
 
 const paginate = async function () {
@@ -64,7 +76,24 @@ const paginate = async function () {
         </div>  
         `);
   });
+
+  updateQntd();
 };
+
+const updateQntd = function () {
+  const pokeList = filteredPokemons.length;
+  $('#qntd').empty();
+  $('#qntd').append(`
+    <h3>
+      Pokemons from ${((currentPage - 1) * PAGE_SIZE) + 1} to
+    ${
+      (((currentPage) * PAGE_SIZE) > pokeList) ?
+        (pokeList) :
+        (currentPage * PAGE_SIZE)
+    } displayed</h3>
+    <h4>${filteredPokemons.length} pokemons.</h4>
+  `);
+}
 
 const displayTypes = async function () {
   let res = await axios.get("https://pokeapi.co/api/v2/type");

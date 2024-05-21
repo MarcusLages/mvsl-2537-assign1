@@ -24,6 +24,7 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "joi": "^17.13.1",
+    "jquery": "^3.7.1",
     "mongodb": "^6.6.0",
     "uid-safe": "^2.1.5"
   }

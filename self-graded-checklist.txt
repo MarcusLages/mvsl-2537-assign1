@@ -4,17 +4,17 @@ Student Set:
 
     Criteria	
     ========
-[]  Fetch all pokemons names from the API and Create a pokemon card for each pokemon
-[]  Display the pokemon's details in the modal
-[]  All pokemons are accessible through the pagination buttons
-[]  Display only at max 5 pages at a time
-[]  Display the next and previous buttons
+[X]  Fetch all pokemons names from the API and Create a pokemon card for each pokemon
+[X]  Display the pokemon's details in the modal
+[X]  All pokemons are accessible through the pagination buttons
+[X]  Display only at max 5 pages at a time
+[X]  Display the next and previous buttons
 
-[]  Highlight the current page's button
-[]  Hide the next and previous buttons when there is no next or previous page
-[]  Display total number of Pokémons and the number of Pokémon being displayed
-[]  Fetch the Pokémon types from the API and display them in a checkbox group
-[]  Filter the Pokémon cards based on the selected types
+[X]  Highlight the current page's button
+[X]  Hide the next and previous buttons when there is no next or previous page
+[X]  Display total number of Pokémons and the number of Pokémon being displayed
+[X]  Fetch the Pokémon types from the API and display them in a checkbox group
+[X]  Filter the Pokémon cards based on the selected types
 
 /50 (Total grade out of 50, 5 marks each x 10 items)
 

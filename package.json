@@ -1,7 +1,7 @@
 {
   "name": "assignment-1-marcuslages",
   "version": "1.0.0",
-  "description": "Assignment 1 for 2537",
+  "description": "Assignments for 2537",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -2,22 +2,47 @@ body {
   margin: 0px;
 }
 
+#panel {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.darkmode {
+  background-color: black;
+  color: white;
+}
+
+.game-btns {
+  display: flex;
+  margin: 0 30vw;
+}
+
+#dark-light {
+  display: flex;
+  /* margin-left: 45%; */
+}
+
 #game_grid {
-  border: 2px tomato solid;
+  /* border: 102px tomato solid; */
   width: 600px;
   height: 400px;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* gap: 10px; */
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 
 .card {
-  width: 33.3%;
+  width: 90%;
   position: relative;
   transition: transform 1s;
   perspective: 1000px;
   transform-style: preserve-3d;
+  border: 3px solid gray;
 }
 
 

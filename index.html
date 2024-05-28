@@ -6,39 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <!-- import jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="index.js"></script>
 </head>
 
 <body>
-  <div id="game_grid">
-    <div class="card">
-      <img id="img1" class="front_face" src="001.png" alt="">
-      <img class="back_face" src="back.webp" alt="">
+  <div id="panel">
+    <div id="info"></div>
+    <div id="pairs"></div>
+    <div id="timer"></div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button id='easy-btn' type="button" class="btn btn-primary">Easy</button>
+      <button id='med-btn' type="button" class="btn btn-primary">Medium</button>
+      <button id='hard-btn' type="button" class="btn btn-primary">Hard</button>
     </div>
-    <div class="card">
-      <img id="img2" class="front_face" src="002.png" alt="">
-      <img class="back_face" src="back.webp" alt="">
+    <div id="game_grid"></div>
+    <div class="btn-group game-btns" role="group" aria-label="Basic example">
+      <button id='start' type="button" class="btn btn-success">Start</button>
+      <button id='reset' type="button" class="btn btn-danger">Reset</button>
+      <button id='hint' type="button" class="btn btn-primary">HINT</button>
     </div>
-    <div class="card">
-      <img id="img3" class="front_face" src="003.png" alt="">
-      <img class="back_face" src="back.webp" alt="">
+    <div id="dark-light" class="btn-group" role="group" aria-label="Basic example" style="width: fit-content; margin-left: 41%;">
+      <button id='light' type="button" class="btn btn-light">Light</button>
+      <button id='dark' type="button" class="btn btn-dark">Dark</button>
     </div>
-    <div class="card">
-      <img id="img4" class="front_face" src="001.png" alt="">
-      <img class="back_face" src="back.webp" alt="">
-    </div>
-    <div class="card">
-      <img id="img5" class="front_face" src="002.png" alt="">
-      <img class="back_face" src="back.webp" alt="">
-    </div>
-    <div class="card">
-      <img id="img6" class="front_face" src="003.png" alt="">
-      <img class="back_face" src="back.webp" alt="">
-    </div>
+    <p id="win" style='font-size: larger; font-weight: bold;'></p>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

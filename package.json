@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/comp2537-s24/assignment-1-MarcusLages#readme",
   "dependencies": {
+    "axios": "^1.7.2",
     "bcrypt": "^5.1.1",
     "connect-mongo": "^5.1.0",
     "dotenv": "^16.4.5",
